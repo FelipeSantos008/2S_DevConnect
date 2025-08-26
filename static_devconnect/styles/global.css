@@ -2,14 +2,15 @@
 
 :root {
     --cor-preto: #000000;
-    --cor-azul: #2686cc;
+    --cor-roxo-forte: #3E008F;
+    --cor-roxo-escuro1: #220566;
+    --cor-roxo-escuro2: #1E003D;
     --cor-branca: #ffffff;
-    --cor-cinza-escuro1: #b6b6b6;
-    --cor-cinza-escuro2: #4D4D4D;
+    --cor-branco2: #F6F9FF;
+    --cor-cinza-medio: #9898AF;
+    --cor-branco3: #F2F6FF;
+    --cor-cinza-escuro2: #E1E1EB;
     --cor-cinza-escuro3: #7D7D7D;
-    --cor-cinza-escuro4: #D1D1D1;
-    --cor-cinza-medio: #e5e5e5;
-    --cor-cinza-claro: #fafafa;
 
     --borda: 1px solid var(--cor-cinza-medio);
     --borda-arredondada: 2px;
@@ -37,7 +38,7 @@
 }
 
 body {
-    background-color: var(--cor-cinza-claro);
+    background-color: var(--cor-branco3);
 }
 
 h1 {
@@ -52,4 +53,14 @@ input{
     height: 35px;
     border: var(--borda);
     background-color: var(--cor-cinza-claro);
+}
+
+.formulario-botao-roxo{
+    background-color: var(--cor-roxo-forte);
+    border-radius: var(--borda-arredondada); /*arredonda os cantos do elementos*/
+    border: none; /*removendo a bordar*/
+    height: 35px;
+    color: var(--cor-branca);
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
 }

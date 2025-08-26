@@ -30,12 +30,7 @@ main>div {
     gap: 15px;
 }
 
-#secao-cadastro {
-    height: 60px;
-    display: flex; /*por padrão coloca os elementos um do lado do outro (Horizontal)*/
-    justify-content: center; 
-    align-items: center;
-}
+
 
 
 
@@ -52,46 +47,43 @@ main>div {
 
 #formulario > div > label{
     font-size: var(--tamanho-fonte-sm);
-    color: var(--cor-cinza-escuro2);
+    color: var(--cor-roxo-forte);
     font-weight: 500;
     padding-bottom: 4px;
 }
+  
+#campo-upload{
+    display: none;
+}
+
+#texto-upload{
+    display: inline-block;
+    background-color:  var(--cor-branco2);
+    /* height: 35px; */
+    color: var(--cor-roxo-forte);
+    padding: 5px;
+    text-align: center;
+}
+
+#cor-fonte{
+    color: var(--cor-cinza-medio);
+}
+
 
 .formulario-botao-roxo{
     width: 100%;
 }
 
-#formulario > p{
-    text-transform: uppercase;
-    font-size: var(--tamanho-fonte-sm);
-    color: var(--cor-cinza-escuro1); /*Transforma o texto em maiusculo*/
-}
 
-#formulario > a, #secao-cadastro > p > a{
+#formulario > a{
     text-decoration: none;
     color: var(--cor-roxo-forte);
 }
 
-#secao-cadastro > p{
-    font-size: var(--tamanho-fonte-md);
-}
 
 .informacao-aplicativo {
     background-color: var(--borda);
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-preto);
     font-weight: 400;
-}
-
-#secao-instalacao {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    /*espaços em linhas e colunas*/
-}
-
-#secao-instalacao img {
-    width: 120px;
-    height: 39px;
 }
