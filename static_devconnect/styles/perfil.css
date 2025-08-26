@@ -1,0 +1,13 @@
+main{
+    width: 100%;
+    min-width: 100vh;
+}
+
+main > div{
+        width: 90%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
