@@ -48,6 +48,13 @@ h1 {
 }
 
 /* formulario */
+
+.estilo-formulario {
+    border: var(--borda);
+    width: 100%;
+    background-color: var(--cor-branca);
+}
+
 input{
     width: 100%;
     height: 35px;
@@ -63,4 +70,76 @@ input{
     color: var(--cor-branca);
     font-size: var(--tamanho-fonte-sm);
     font-weight: 600;
+}
+
+#campo-upload{
+    display: none;
+}
+
+#texto-upload{
+    display: inline-block;
+    background-color:  var(--cor-branco3);  
+    /* height: 35px; */
+    width: 100%;
+    max-width: 300px;
+    color: var(--cor-roxo-forte);
+    padding: 5px;
+    text-align: center;
+}
+
+    /* Cabeçalho */
+#cabeçalho{
+    width: 100%; /*100% da hanela de visualização*/
+    height: 80px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#cabeçalho > nav{
+    background-color: var(--cor-cinza-escuro2);
+    width: 90%;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--borda);
+}
+
+#logo-mobile{
+    display: none; /*remove a exibição da imagem*/
+}
+
+.cabecalho-acoes{
+    /* background-color: chocolate; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho-acoes > a{
+    display: flex;
+    align-items: center;
+}
+
+#foto-perfil{
+    width: 40px;
+    height: 40px;
+    object-fit: cover; /*redimencionar a foto*/
+    object-position: center;
+    border-radius: 50%;
+}
+
+
+/* RESPONSIVO */
+@media only screen and (max-width: 485px) {
+    #logo-mobile{
+        display: initial; /*Volta o valor inicial de exibição*/
+    }
+
+    #logo-desktop{
+        display: none;
+    }
 }
