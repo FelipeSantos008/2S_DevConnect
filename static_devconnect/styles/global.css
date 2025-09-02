@@ -13,7 +13,7 @@
     --cor-cinza-escuro3: #7D7D7D;
 
     --borda: 1px solid var(--cor-cinza-medio);
-    --borda-arredondada: 2px;
+    --borda-arredondada: 5px;
 
     --tamanho-fonte-lg: 20px;
     --tamanho-fonte-md: 16px;
@@ -35,6 +35,7 @@
     margin: 0;
     box-sizing: border-box;
     /* o valor total do tamanho do elemento conta tanto com espaços interno/externo e as bordas*/
+    outline-color: var(--cor-roxo-forte);
 }
 
 body {
@@ -78,17 +79,20 @@ input{
 
 #texto-upload{
     display: inline-block;
-    background-color:  var(--cor-branco3);  
-    /* height: 35px; */
+    background-color:  var(--cor-cinza-medio);  
+    min-height: 35px;
     width: 100%;
     max-width: 300px;
-    color: var(--cor-roxo-forte);
+    color: var(--cor-preto);
     padding: 5px;
     text-align: center;
+    border-radius: var(--borda-arredondada);
 }
 
     /* Cabeçalho */
-#cabeçalho{
+#cabecalho{
+    background-color: var(--cor-cinza-escuro2);
+    border-bottom: var(--borda);
     width: 100%; /*100% da hanela de visualização*/
     height: 80px;
     /* background-color: aqua; */
@@ -97,15 +101,13 @@ input{
     /* align-items: center; */
 }
 
-#cabeçalho > nav{
-    background-color: var(--cor-cinza-escuro2);
+#cabecalho > nav{
     width: 90%;
     max-width: 1440px;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: var(--borda);
 }
 
 #logo-mobile{
@@ -124,7 +126,7 @@ input{
     align-items: center;
 }
 
-#foto-perfil{
+.foto-perfil{
     width: 40px;
     height: 40px;
     object-fit: cover; /*redimencionar a foto*/
