@@ -36,6 +36,7 @@
     box-sizing: border-box;
     /* o valor total do tamanho do elemento conta tanto com espaços interno/externo e as bordas*/
     outline-color: var(--cor-roxo-forte);
+    
 }
 
 body {

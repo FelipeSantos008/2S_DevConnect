@@ -1,14 +1,127 @@
-main{
+main {
     width: 100%;
-    min-width: 100vh;
-}
-
-main > div{
-        width: 90%;
-}
-
-header{
+    min-height: 100vh;
+    /* background-color: aqua; */
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-flex-publi {
+    /* background-color: blueviolet; */
+    width: 90%;
+    max-width: 900px;
+    /* height: 700px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#card-perfil {
+    /* background-color: brown; */
+    width: 100%;
+    height: 300px;
+    /*temporario*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid;
+}
+
+#card-perfil>article {
+    /* background-color: cadetblue; */
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.info-perfil {
+    font-weight: 400;
+    color: var(--cor-preto);
+    text-decoration: none;
+}
+
+#card-perfil>article>span {
+    font-weight: 600;
+    color: var(--cor-preto);
+}
+
+.nome-usuario {
+    width: 100%;
+}
+
+.foto-perfil-grande {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    /*redimencionar a foto*/
+    object-position: center;
+    border-radius: 50%;
+}
+
+.botao-perfil {
+    font-size: medium;
+    color: var(--cor-roxo-escuro1);
+    text-decoration: none;
+}
+
+#img-galeria{
+    /* background-color: aquamarine; */
+    width: 100%;
+    /* height: 900px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#publi-no-perfil{
+    /* background-color: brown; */
+}
+
+.card-publi > header > a {
+    text-decoration: none;
+    display: flex;
+}
+
+#alinhamento-foto {
+    /*cad-publi > header > a*/
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-weight: 700;
+}
+
+.imagem-publicacao{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    /* height: 500px; */
+}
+
+.interacao-publicacao{
+ /* background-color: brown; */
+ width: 100px;
+ display: flex;
+ /* justify-content: space-between; */
+ gap: 10px;
+ flex-wrap: wrap;
+ order: 1;
+ margin: 15px 3%;
+}
+
+.interacoes-publicacao>button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.interacoes-publicacao>article>button {
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 500;
+    color: var(--cor-preto);
 }
